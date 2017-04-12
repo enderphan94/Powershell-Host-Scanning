@@ -35,19 +35,13 @@ Write-Host $Target
 if($ip){
      $result = $null
 
-    
-
      $currentEAP = $ErrorActionPreference
 
      $ErrorActionPreference = "silentlycontinue"
 
-
      $result = [System.Net.Dns]::gethostentry($ip)
 
-
      $ErrorActionPreference = $currentEAP
-
-    
 
      If ($Result)
 
