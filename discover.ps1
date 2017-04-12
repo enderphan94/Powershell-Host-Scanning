@@ -1,12 +1,9 @@
-
 param( 
         #[parameter(Mandatory=$true)] 
             
         [System.Net.IPAddress]$StartScanIP, 
         [System.Net.IPAddress]$EndScanIP, 
-        [Int[]]$Ports
-   
-       
+        [Int[]]$Ports   
     ) 
 
     Begin{} 
@@ -117,13 +114,9 @@ param(
                         } 
                         
                     } 
-                    
-                    
-            
+         
             Write-Host $IP  $HostName  $MAC $PortsStatus $OS_Name $OS_Ver
-
           
-            
             }
         
         
